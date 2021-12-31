@@ -32,9 +32,9 @@
   integrity sha512-dfFWaQXitYJ4kxrgGJNhDNXX54/v10YgoJqBMVe6lhqs6a4N9WD7goZJEvwin82TtK8MqUNhwfyisgKwM6dMdg==
 
 "@rollup/plugin-node-resolve@^13.1.1":
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.1.1.tgz#d38ba06e7b181ab4df64c75409b43d9bdc95ae34"
-  integrity sha512-6QKtRevXLrmEig9UiMYt2fSvee9TyltGRfw+qSs6xjUnxwjOzTOqy+/Lpxsgjb8mJn1EQNbCDAvt89O4uzL5kw==
+  version "13.1.2"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.1.2.tgz#f05cbdce79e6d5fe1c4249a33ea961ea21cec258"
+  integrity sha512-xyqbuf1vyOPC60jEKhx3DBHunymnCJswzjNTKfX4Jz7zCPar1UqbRZCNY1u5QaXh97beaFTWdoUUWiV4qX8o/g==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     "@types/resolve" "1.17.1"
@@ -234,9 +234,9 @@ rollup@^2.61.1:
     fsevents "~2.3.2"
 
 sass@^1.45.1:
-  version "1.45.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.45.1.tgz#fa03951f924d1ba5762949567eaf660e608a1ab0"
-  integrity sha512-pwPRiq29UR0o4X3fiQyCtrESldXvUQAAE0QmcJTpsI4kuHHcLzZ54M1oNBVIXybQv8QF2zfkpFcTxp8ta97dUA==
+  version "1.45.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.45.2.tgz#130b428c1692201cfa181139835d6fc378a33323"
+  integrity sha512-cKfs+F9AMPAFlbbTXNsbGvg3y58nV0mXA3E94jqaySKcC8Kq3/8983zVKQ0TLMUrHw7hF9Tnd3Bz9z5Xgtrl9g==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
