@@ -1,6 +1,6 @@
 # rails 7 sass jumpstart light
 
-Epic Ruby On Rails 7 SaaS Jumpstart Dark Themed template with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus JS GLightbox and Action Cable/Cable Ready & Request JS. 
+Epic Ruby On Rails 7 SaaS Jumpstart Light Themed template with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus JS GLightbox and Action Cable/Cable Ready & Request JS. 
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
 
