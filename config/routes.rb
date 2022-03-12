@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :notifications
     resources :announcements
 
-    root to: "users#index"
+    root to: 'users#index'
   end
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]
