@@ -85,6 +85,7 @@ https://www.patreon.com/xhostcom
 
 ## Todo
 
+### Yeet DBA, fix db constraint errors see link in Gemfile ###
 
 #################################################
 
