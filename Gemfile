@@ -15,7 +15,7 @@ gem 'sprockets-rails'
 gem 'pg', '~> 1.2'
 # gem 'yeet_dba'
 
-# Audit Bundle
+# Audit the Bundle  [https://www.rubydoc.info/gems/bundle-audit/0.1.0]  bundle audit --update bundle audit
 gem 'bundle-audit'
 
 # Use the Puma web server [https://github.com/puma/puma]
