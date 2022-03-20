@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source 'https://rubygems.org'  
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
@@ -14,6 +14,9 @@ gem 'sprockets-rails'
 # Use postgresql as the database for Active Record, & optional yeet_dba for DB constraint errors, [https://github.com/kevincolemaninc/yeet_dba]
 gem 'pg', '~> 1.2'
 # gem 'yeet_dba'
+
+# Audit Bundle
+gem 'bundle-audit'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -54,7 +57,6 @@ gem 'rails-patterns'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.2'
-gem 'paperclip', git: 'git://github.com/thoughtbot/paperclip.git'
 
 # Admin section
 gem 'administrate', github: 'excid3/administrate', branch: 'jumpstart'
