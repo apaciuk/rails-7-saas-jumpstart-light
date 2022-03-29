@@ -4,7 +4,7 @@ Epic Ruby On Rails 7 SaaS Jumpstart Light Themed template with PostgreSQL, Redis
 
 ## Roles ##
 
-* Admin as boolean flag on User model (manual)
+* Admin as boolean flag on User model (manual - console)
 * Member and other roles as enum on User model 
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
