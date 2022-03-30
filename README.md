@@ -2,10 +2,10 @@
 
 Epic Ruby On Rails 7 SaaS Jumpstart Light Themed template with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus JS GLightbox and Action Cable/Cable Ready & Request JS. 
 
-## Roles ##
+## Roles - Devise User Model ##
 
-* Admin as boolean flag on User model (manual - in console)
-* Member and other roles as enum on User model 
+* Admin as boolean flag on User model (manual - switch it in console)
+* Member and other roles as enum integer on User model (write methods as required)
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
 
@@ -36,19 +36,18 @@ After first set email & db credentials in .env file (for PostgreSQL, cp .env.exa
 
 * Hotwire
 
-4. $ rails hotwire:install
+4. $ rails hotwire:install  (dont overwrite, request js module declared in root .ts file )
 
 5. $ bin/rails db:migrate:reset
 
 6. Is set up to send basic user signup mail with Gmail, alter smtp or other mail credentials (.env, application_mailer, devise.rb & development.rb), then test signup confirmation emails by signing up & confirming user email
 As above be sure to copy .env.example > .env and enter details, or adapt to suit yours.  (2 factor auth Google accs req an App password for the device registered there and being used, not the normal password)
 
-
 7. $ rails dev:cache (check/toggle, must be cached, if not run again)
 
 ## Optional
 
-8. $ rails stimulus_reflex:install (extra config needed see link above)
+8. $ rails stimulus_reflex:install (extra config needed see link [https://docs.stimulusreflex.com/])
 
 # Optional
 
@@ -97,12 +96,4 @@ https://www.patreon.com/xhostcom
 
 ### Multi Tenancy Support ###
 
-(When create new files or migrations run Rubocop to correct and add frozen_string_literal offenses)
-
-AThere are two steps in adding multi-tenancy to your app with acts_as_tenant:
-
-* Setting the current tenant
-
-* Scoping your models.
-
-# Refer to docs at [https://github.com/ErwinM/acts_as_tenant]
+## Todo
