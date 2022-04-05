@@ -24,4 +24,14 @@ class User < ApplicationRecord
   has_many :notifications, as: :recipient
   has_many :services
   # has_many :members
+  
+   private
+
+  # Example role set method
+  def set_alt_role
+    case role.to_sym
+    when :member
+      self.role = :member
+    end
+  end
 end
