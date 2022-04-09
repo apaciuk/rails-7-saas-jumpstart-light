@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'  
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
@@ -11,23 +11,25 @@ gem 'rails', github: 'rails/rails', branch: '7-0-stable'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-# Use postgresql as the database for Active Record, & optional yeet_dba for DB constraint errors, [https://github.com/kevincolemaninc/yeet_dba]
+# Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
-# gem 'yeet_dba'
 
 # Audit the Bundle  [https://www.rubydoc.info/gems/bundle-audit/0.1.0]  bundle audit --update bundle audit
 gem 'bundle-audit'
 
+# Annotations in schema and routes [https://github.com/ctran/annotate_models]
+gem 'annotate'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
-# View Components/Partials
+# Splitclient [https://help.split.io/hc/en-us] Optional
+# gem 'splitclient-rb'
+
+# View Components/Partials  [https://viewcomponent.org/]
 gem 'view_component'
 
-# Multi Tenant Row-level multitenancy (ease of filtering records) [https://github.com/ErwinM/acts_as_tenant]
-# gem 'acts_as_tenant'
-
-# Http & cookies
+# Http & cookies [https://rubygems.org/gems/mechanize]
 gem 'mechanize'
 
 # Use JavaScript with ESM import maps, & bundling CSS [https://github.com/rails/importmap-rails]
@@ -36,9 +38,11 @@ gem 'importmap-rails'
 gem 'jsbundling-rails', '~> 1.0'
 gem 'requestjs-rails' # Always after importmap
 
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev] and Pagy for pagination [https://github.com/ddnexus/pagy]
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
-gem 'pagy'
+
+# Pagy Pagination [https://ddnexus.github.io/pagy/#gsc.tab=0]
+# gem 'pagy' 
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'cable_ready'
@@ -52,7 +56,7 @@ gem 'font-awesome-rails'
 # IDs
 gem 'friendly_id', '~> 5.4'
 
-# Service Objects
+# Service Objects  [https://www.rubydoc.info/gems/light-services/0.6.3] [https://www.rubydoc.info/gems/rails-patterns/0.11.0]
 gem 'light-services', '~> 0.6.3'
 gem 'rails-patterns'
 
@@ -73,12 +77,10 @@ gem 'omniauth-facebook', '~> 8.0'
 gem 'omniauth-github', '~> 2.0'
 gem 'omniauth-twitter', '~> 1.4'
 
-# Auth, Logins, Tokens
+# (Logins, Tokens, Auth Roles,(ie Author, Editor, Instructor, Curator etc, for Admin = in console: User.first.update :admin => true) [[https://www.rubydoc.info/gems/pundit_roles/0.6.0]
 gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
 gem 'devise_masquerade', '~> 1.3'
-
-# Auth Roles w Devise
-gem 'pundit', '~> 2.1'
+gem 'pundit'
 
 # Processes
 gem 'sidekiq', '~> 6.2'
